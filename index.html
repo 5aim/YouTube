@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/993c2cba92.js" crossorigin="anonymous"></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Javascript -->
+    <script src="main.js" defer></script>
+
+    <!-- title -->
+    <title>Youtube Clone Coding</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <i class="fab fa-youtube"></i>
+            <span class="icons">
+            </span>
+        </div>
+        <div class="icons">
+            <i class="fas fa-search"></i>
+            <i class="fas fa-ellipsis-v"></i>
+        </div>
+    </header>
+
+    <!-- Video Player -->
+    <section class="player">
+        <video controls src="video/forgetme.MOV"></video>  <!-- autoplay : 컨트롤x 자동재생 -->
+    </section>
+
+    <div class="infoAndUpNext">
+        <!-- Video Information -->
+        <section class="info">
+
+            <!-- metadata -->
+            <div class="metadata">
+                <ul class="hashtags">
+                    <li>#사당역</li>
+                    <li>#노래방</li>
+                    <li>#스파르타 코딩클럽</li>
+                    <li>#3팀회식</li>
+                    <li>#김정후</li>
+                    <li>#foxyrain</li>
+                </ul>
+                <div class="titleAndButton">
+                    <span class="title clamp">Lorem ipsum dolor sit amet consectetur adipisicing elit. At fugiat iure dolor praesentium mollitia harum illum. Deserunt, debitis. Molestias doloremque, eaque dicta iste sapiente necessitatibus hic numquam repellat aut. Minus. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor odio quidem voluptates doloribus soluta perspiciatis. Nihil nam dolores et voluptatem perferendis. Molestias ex, illum saepe maxime nostrum blanditiis minima voluptate.</span>
+                    <button class="moreBtn"><i class="fas fa-caret-down"></i></button>
+                </div>
+                <span class="views">100 views</span>
+            </div>
+
+            <!-- actions button -->
+            <ul class="actions">
+                <li><button><i class="active fas fa-thumbs-up"></i><span>10</span></button></li>
+                <li><button><i class="fas fa-thumbs-down"></i><span>0</span></button></li>
+                <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+                <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+                <li><button><i class="fas fa-font-awesome-flag"></i><span>Report</span></button></li>
+            </ul>
+
+            <!-- channel description -->
+            <div class="channel">
+                <div class="metadata">
+                    <img src="image/IMG_1836.JPG" alt="" />
+                    <div class="info">
+                        <span class="name">김혁진</span>
+                        <span class="subscribers">80M subscribers</span>
+                    </div>
+                </div>
+                <button class="subscribe">subscribe</button>
+            </div>
+        </section>
+
+        <!-- Up Next -->
+        <section class="Upnext">
+            <span class="title">Up Next</span>
+            <ul>
+                <li class="item">
+                    <div class="img">
+                        <img src="image/web.png" alt="">
+                    </div>
+                    <div class="info">
+                        <span class="title">웹개발 종합반은 스파르타에게 ‘왕초보 코딩교육의 명가’라는 타이틀을 가져다준 수업인만큼, 지난 2년 동안 수차례의 커리큘럼 개선과 재촬영이 있었습니다. 이렇게 단시간에 쉽게 A-Z를 가르쳐서 내 서비스를 만들 수 있는 단계로 만드는 수업은 유일하다고, 실제 수강생분들이 입을 모아 이야기했습니다.</span>
+                        <span class="name">이범규</span>
+                        <span class="views">97,342</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img">
+                        <img src="image/ml_bgn.png" alt="">
+                    </div>
+                    <div class="info">
+                        <span class="title">딥러닝, 머신러닝, 인공지능- 나에게 너무 먼 기술처럼 느껴지지 않으셨나요? 사실 위대한 개발자들이 위대한 개발을 해두어서, 우리가 그것을 잘 가져다 쓰는 것만으로도, 그럴싸한 딥러닝 프로그램을 만들 수 있고, 사실 재밌습니다!
+                            그 과정에서 자연스럽게 딥러닝 모델의 사용법과 원리를 이해하고 응용하실 수 있게 될 것입니다.</span>
+                        <span class="name">이태희</span>
+                        <span class="views">3,824</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+                <li class="item">
+                    <div class="img">
+                        <img src="image/data_bgn.png" alt="">
+                    </div>
+                    <div class="info">
+                        <span class="title">데이터분석 종합반은 파이썬 기초 문법부터 데이터를 수집하고, 정제하고, 분석하고, 시각화하는 데이터분석 과정 전반에 대해 먼저 익숙해지고, 다양한 예제를 통해 데이터로부터 통찰을 얻는 방법 그 자체에 집중했습니다. 현업 마케터, 기획자, 금융권 종사자 등 내 업무에서 새로운 인사이트가 필요한 당신께 가장 추천합니다.</span>
+                        <br>
+                        <span class="name">김준태</span>
+                        <br>
+                        <span class="views">74,678</span>
+                    </div>
+                    <button class="moreBtn"><i class="fas fa-ellipsis-v"></i></button>
+                </li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
